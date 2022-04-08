@@ -1,0 +1,284 @@
+ @import 'util.css';
+ :root{
+
+    --primary:#2393de;
+    --secondary:#0b03fc;
+     --dark:#111212;
+     --light:#6eaae6;  
+     --red:#eb2838;
+ }
+ html{
+     scroll-behavior: smooth;
+ }
+ /* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+ body{
+     font-family: 'poppins',sans-serif;
+ }
+ /*....................................*/
+ html{
+     scroll-behavior: smooth;
+ }
+ *{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     -webkit-font-smoothing:antialiased
+ }
+ header{
+     
+     background: var(--dark);
+     padding-bottom: 5cm;
+     clip-path: polygon(0 0,100% 0,100% 100%,70% 87%,0 100%);
+
+ }
+ .container{
+     max-width: 1152px;
+     padding: 0 15px;
+     margin:0 auto ;
+ }
+ header nav .left a{
+     color: white; 
+     text-decoration:none;
+     margin-right: 2rem;
+     text-transform: uppercase;
+     transition: all .3s ease;
+
+ }
+ header nav .left a:hover{ 
+     color: rgb(252, 0, 0);}
+ header nav{
+     padding: 2rem 0;
+ }
+ header nav .branding{
+     margin-right:5rem;
+ }
+ .mike .left img{
+     
+     width: 250px;
+ }
+ .mike .right {
+     color: white;
+     
+}
+.mike .right{
+    padding-top: 4rem;
+}
+.mike .right{
+    padding: 3rem;
+   
+}
+.mike .right h6{
+    padding-right: 3rem;
+    font-size: 1.2rem;
+    
+}
+.mike .right h1{
+    font-size: 2.8rems;
+}
+.mike .right h1 span{
+color: red;
+ font: weight 100;
+   
+}
+.mike .right h2 span  {
+    color: royalblue;
+    font-weight: 100;
+    
+}
+.mike .right h2 :hover{
+    color: blue;
+    cursor: pointer;
+}
+  .mike  .right h1 :hover{
+      cursor: pointer;
+  }
+  .mike .right h2{
+      font-size:2rem;
+  }
+ 
+  section{
+      padding: 4rem 0;
+  }
+section.about .about-me-img{
+      height: 300px;
+      border-radius: 50%;
+  }
+  section.about h1{
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+     font-weight: 400;
+  }
+  section.about h1 span{
+    color: #eb2838;  
+}
+section.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+section.about p{
+    font-family: 'lato',sans-serif;
+    color: #73726f;
+    line-height: 1.9;
+}
+.about .col1{
+    padding-left: 3rem;
+}.about .col2{
+    padding-left: 6rem;
+}
+.about .col2{
+  padding-right: 7rem;
+}
+.skills .sec-heading{
+    color: black;
+    text-align:center;
+
+     margin-bottom: 4rem;
+    font-weight: 250;
+}
+.hobby .sec-heading{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.sec-heading span{
+    color: red;
+}
+section.hobby .cardw{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   
+}
+section.hobby{
+    background-color:#f9fcf5;
+}
+section.hobby .cardw .card
+{
+    background-color: whitesmoke;
+    padding: 3rem 2rem;
+}
+section.hobby .cardw .card img{
+height: 200px; 
+border-radius: 10;
+  
+}
+section.hobby .cardw .card .handimg{
+    padding-right:2.5rem;
+    
+}
+
+footer{
+    background: #111;
+    padding: 10px 20px;
+    color:whitesmoke;
+    text-align-last: right;
+}
+footer span{
+    color: crimson;
+    text-decoration: none;
+}
+
+/* skills section styling */
+.section.skills .title h2{
+    text-align: center;
+}
+.section.skills{
+    background-color: whitesmoke;
+}
+.skills .skills-content .column{
+    align-content: center;
+    padding-left: 2rem ;
+    padding-right: 10rem;
+}
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    background: rgb(54, 186, 226);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid rgb(22, 134, 224);
+    transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover{
+    color: rgb(40, 218, 241);
+    background: none;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.skills-content .right .html::before{
+    width: 90%;
+}
+.skills-content .right .css::before{
+    width: 60%;
+}
+.skills-content .right .js::before{
+    width: 80%;
+}
+.skills-content .right .php::before{
+    width: 50%;
+}
+.skills-content .right .mysql::before{
+    width: 70%;
+}
+.skills-content .right .python::before{
+    width: 90%;
+}
+/*skill end   .........................*/ 
+.contact .sec-heading{
+    color: black;
+    text-align:center;
+    padding-bottom: 3rem;
+    
+}
+.section.contact .input{
+    padding-left: 10px;
+}
